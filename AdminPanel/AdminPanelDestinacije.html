@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="">
+    <meta name="description" content="">
+    <title>TRAVELwithMe</title>
+    <link rel="stylesheet" href="../general.css">
+    <link rel="stylesheet" href="admin.css">
+    
+    
+</head>
+<body>
+  <header class="header">
+    <div style="margin: auto;">
+        <div class="row ">
+           
+             <img style="height:70px; " src="../images/travelZaBar.png" alt="TRAVELwithMe">
+           
+           <input type="checkbox" id="nav-check">
+           <label for="nav-check" class="nav-toggler">
+              <span></span>
+           </label>
+           <nav class="nav">
+              <ul style="padding-inline-start:0%">
+                 <li><a href="../kt1.html">Home</a></li>
+                 <li><a  id="agencijeNav">Agencije &#9660;</a>
+                    <ul id="listaAgencija" style="padding-inline-start:0%"> </ul>
+                  </li>
+                  <li><a id="destinacijeNav" class="navDropdown">Destinacije &#9660;</a>
+                    <ul id="listaDestinacija" style="padding-inline-start:0%"></ul>
+                  </li>
+                  
+
+                  <li><a  style="color:rgb(51, 107, 135)">Admin &#9660;</a>
+                    <ul style="padding-inline-start:0%">
+                      <li style="display: block;padding:3%"><a href="AdminPanelKorisnici.html">Svi korisnici</a></li>
+                      <li style="display: block; padding:3%"><a href="AdminPanelAgencije.html">Agencije</a></li>
+                    <li style="display: block; padding:3%"><a  href="AdminPanelDestinacije.html">Destinacije</a></li>
+                    </ul>
+                  </li>
+                  <li ><div>
+                    <a class="button" href="#popup1">Prijavi se</a>
+                </div>
+                
+                <div id="popup1" class="overlay">
+                    <div class="popup">
+                        <h2>Prijava</h2><br>
+                        <p>Unesite Vase korisnicko ime: <br></p>
+                      <input type="text" placeholder="korisnicko ime" id="korisnicko ime prijava">
+                      <p>Unesite lozinku: <br></p>
+                      <input type="password" placeholder="lozinka" id="lozinka prijava"><br>
+                      <p id="error-message" style="color:rgba(1151, 107, 135)"></p>
+                      <br>
+                      <button style="background-color:rgba(1151, 107, 135);border-width: thin; cursor: pointer;" onclick="submitForm()">potvrdi</button>
+                        <a class="close" href="#">&times;</a>
+                        <div class="content">
+                        </div>
+                    </div>
+                </div></li>
+                  <li><div>
+                    <a class="button" href="#popup2">Registruj se</a>
+                </div>
+                <div id="popup2" class="overlay">
+                    <div class="popup">
+                        <div class="centar" >
+                          <h2>Registracija</h2><br>
+                          <p>Unesite Vase ime: <br></p>
+                          <input type="text" placeholder="ime" id="ime registracija">
+                          <p>Uneiste Vase prezime <br></p>
+                          <input type="text" placeholder="prezime" id="prezime registracija">
+                          <p>Unesite Vase korisnicko ime: <br></p>
+                          <input type="text" placeholder="korisnicko ime" id="korisnicko ime registracija">
+                          <p>Unesite lozinku: <br></p>
+                          <input type="text" placeholder="lozinka" id="lozinka registracija">
+                          <p>Unesite email: <br></p>
+                          <input type="text"  placeholder="email" id="email registracija">
+                          <p>Unesite datum rodjenja: <br></p>
+                          <input type="date"  value="yyyy-mm-dd" min="1900-01-01" max="2023-06-06" id="datum rodjenja registracija">
+                          <p>Unesi adresu trenutnog prebivalista:<br></p>
+                          <input type="text" placeholder="ulica i broj" id="adresa registracija"><br> 
+                          <input type="text" placeholder="grad" id="grad registracija"><br> 
+                          <input type="text" placeholder="postanski broj" id="postanski broj registracija">
+                          <p>Unesi broj telefona:</p>
+                          <input type="text" placeholder="broj telefona" id="telefon registracija">
+                          <br><p id="error-message2" style="color:rgba(1151, 107, 135)"></p><br>
+                          <button style="background-color:rgba(1151, 107, 135);border-width: thin; cursor: pointer;" onclick="submitRegistracija()">sacuvaj</button>
+                          <button style="background-color:rgba(1151, 107, 135);border-width: thin; cursor: pointer;" onclick="resetRegistracija()">restartuj</button>
+                         </div>
+                        <a class="close" href="#">&times;</a>
+                        
+                    </div>
+                </div></li>
+                <div class="overlay" id="poruka2">
+                  <a class="close" href="#">&times;</a>
+                </div>
+              </ul>
+           </nav>
+        </div>
+    </div>
+ </header>
+ <div class="praznina"></div>
+ 
+<script src="navbar.js"></script>
+ 
+
+
+     <script src="adminPanel.js"></script>
+
+  
+
+     <div id="destinacije">
+       <h1 >DESTINACIJE</h1>
+     
+       <table class="styled-table">
+           <thead>
+               <th>Cena</th>
+               <th>Max osoba</th>
+               <th>Naziv</th>
+               <th>Opis</th>
+               <th>Prevoz</th>
+               <th>&nbsp;</th>
+               <th>&nbsp;</th>
+           </thead>
+           <tbody id="sveDestinacije"></tbody>
+       </table>
+     </div>
+
+
+     <div class="praznina"></div>
+     <div style="background-color:rgba(132, 198, 255, 0.804) ; background-size: cover; text-align: center;">
+      <img style="width:20%;height:20%" src="../images/travel.png" alt="">
+      <p class="sredina">Andjela Ristic<br>Email: andjelaristic371@gmail.com<br>Broj telefona: 0123456789 <br> FAKULTET TEHNICKIH NAUKA <br> Softversko inzenjerstvo i informatika</p><br>
+      
+    </div>
+    </body>  
+    </html>
