@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turisticke destinacije</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="turistickiADsve.css">
+
+</head>
+<body>
+    <header class="header">
+        <div style="margin: auto;">
+            <div class="row ">
+               
+                 <img style="height:70px; " src="images/travelZaBar.png" alt="TRAVELwithMe">
+               
+               <input type="checkbox" id="nav-check">
+               <label for="nav-check" class="nav-toggler">
+                  <span></span>
+               </label>
+               <nav class="nav">
+                  <ul style="padding-inline-start:0%">
+                     <li><a href="kt1.html" >Home</a></li>
+                     <li><a  href="turistickeAgencijeSve.html" >Agencije &#9660;</a>
+                        <ul style="padding-inline-start:0%">
+                          <li style="display: block;padding:3%"><a href="agencija/turistickaAgencija1.html">Aero-turs</a></li>
+                          <li style="display: block; padding:3%"><a href="agencija/turistickaAgencija2.html">Air Serbia</a></li>
+                        <li style="display: block; padding:3%"><a  href="agencija/turistickaAgencija4.html">Big blue</a></li>
+                        <li style="display: block; padding:3%"><a href="turistickeAgencijeSve.html">Sve agencije</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="turistickeDestinacijeSve.html" style="color:rgb(51, 107, 135)">Destinacije &#9660;</a>
+                        <ul style="padding-inline-start:0%" >
+                            <li style="display: block; padding:3%"><a href="destinacije/turistickaDestinacija1.html">Sitonija</a></li>
+                            <li style="display: block; padding:3%"><a href="destinacije/turistickaDestinacija2.html">Atos</a></li>
+                            <li style="display: block; padding:3%"><a href="destinacije/turistickaDestinacija3.html">Palatamon</a></li>
+                            <li style="display: block; padding:3%"><a href="turistickeDestinacijeSve.html">Sve destinacije</a></li>
+                        </ul>
+                      </li>
+                      <li ><div>
+                        <a class="button" href="#popup1">Prijavi se</a>
+                    </div>
+                    
+                    <div id="popup1" class="overlay">
+                        <div class="popup">
+                            <h2>Prijava</h2><br>
+                            <p>Unesite Vase korisnicko ime: <br></p>
+                          <input type="text" placeholder="korisnicko ime..">
+                          <p>Unesite lozinku: <br></p>
+                          <input type="password" placeholder="lozinka">
+                          <br><br>
+                          <button style="background-color:rgba(1151, 107, 135);border-width: thin; cursor: pointer;">potvrdi</button>
+                            <a class="close" href="#">&times;</a>
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div></li>
+                      <li><div>
+                        <a class="button" href="#popup2">Registruj se</a>
+                    </div>
+                    
+                    <div id="popup2" class="overlay">
+                        <div class="popup">
+                            <div class="centar" >
+                                <h2>Registracija</h2><br>
+                                <p>Unesite Vase ime: <br></p>
+                                <input type="text" placeholder="ime">
+                                <p>Uneiste Vase prezime <br></p>
+                                <input type="text" placeholder="prezime">
+                                <p>Unesite Vase korisnicko ime: <br></p>
+                                <input type="text" placeholder="korisnicko ime">
+                                <p>Unesite lozinku: <br></p>
+                                <input type="password" placeholder="lozinka">
+                                <p>Unesite email: <br></p>
+                                <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="email">
+                                <p>Unesite datum rodjenja: <br></p>
+                                <input type="date"  value="yyyy-mm-dd" min="1900-01-01">
+                                <p>Unesi adresu trenutnog prebivalista:<br></p>
+                                <input type="text" placeholder="adresa"><br> <input type="text" placeholder="grad"><br> <input type="text" placeholder="postanski broj">
+                                <p>Unesi broj telefona:</p>
+                                <input type="number" placeholder="broj telefona">
+                                <br><br>
+                                <button style="background-color:rgba(1151, 107, 135);border-width: thin; cursor: pointer;">sacuvaj</button>
+                                <button style="background-color:rgba(1151, 107, 135);border-width: thin; cursor: pointer;">restartuj</button>
+                               </div>
+                            <a class="close" href="#">&times;</a>
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div></li>
+                        
+                  </ul>
+               </nav>
+            </div>
+        </div>
+     </header>
+	 <div class="praznina"></div>
+
+     <h1> Letovanje:</h1>
+<br>
+<div class="kartica">
+		<div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/LMOgMnP.jpeg">
+				<div class="imeAD"> Sitonija </div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija1.html">Pogledajte vise informacija</a></div>
+				<div >Sitonija zapravo predstavlja drugi prst Halkidikija i nalazi se između poluostrva Atos i Kasandra. Neverovatno grčko letovalište...
+                </div>
+			</div>
+		</div>
+		<div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/13NPfCE.jpeg">
+				<div class="imeAD">Atos</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija2.html">Pogledajte vise informacija</a></div>
+				<div >Atos, najistočnije poluostrvo Halkidikija, možda najmanje posećen, ali zato nedovoljno istražen i veoma atraktivan...</div>
+			</div>
+		</div>
+		<div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/zHG54w5.jpeg">
+				<div class="imeAD"> Palatamon</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija3.html">Pogledajte vise informacija</a></div>
+				<div >Platamon je smešten u Olimpskoj Regiji (oblast Pieria) na manje od 4 kilometara od popularnog letovališta Nei Pori i desetak...</div>
+			</div>
+		</div>
+		<div class="sadrzajD">
+			<div >
+                <img src="https://i.imgur.com/S6vhQ9h.jpeg">
+				<div class="imeAD"> Sarti</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija4.html">Pogledajte vise informacija</a></div>
+				<div >Sarti je pre samog turističkog procvata važio za skromno i mirno ribarsko selo u kom živi oko 1200 stanovnika. Smešten je na...</div>
+			</div>
+		</div>
+		<div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/QORUNqY.jpeg">
+				<div class="imeAD">Nea Vrasna</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija5.html">Pogledajte vise informacija</a></div>
+				<div >Nea Vrasnu možemo opisati kao malo i mirno selo sa samo 2500 stanovnika. I u toku sezone, osim naravno buke i gužve zbog ... </div>
+			</div>
+		</div>
+		<div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/Xr7tC1k.jpeg">
+				<div class="imeAD"> Kušadasi</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija6.html">Pogledajte vise informacija</a></div>
+				<div >Kušadasi se nalazi na severnoj obali Egejskog mora.Od Izmira, jednog od većih turskih gradova, je udaljen 90 km a od...</div>
+			</div>
+		</div>
+		<div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/G2CpQ7G.jpeg">
+				<div class="imeAD"> Marmaris</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija7.html">Pogledajte vise informacija</a></div>
+				<div >Marmaris - poznato letovalište u Turskoj, na obalama Egejskog mora. Nekada samo malo ribarsko naselje danas je preraslo u...</div>
+			</div>
+		</div>
+        <div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/exbQ5PA.jpeg">
+				<div class="imeAD"> Belek</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija8.html">Pogledajte vise informacija</a></div>
+				<div>Belek sa svojom sjajnom pozicijom na svega 40 kilometara od antalijskog aerodroma i mnoštvom luksuznih hotela okruženih...</div>
+			</div>
+		</div>
+		<div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/4LRGGyb.jpeg">
+				<div class="imeAD"> Side</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija9.html">Pogledajte vise informacija</a></div>
+				<div>Side je jedan od najpoznatijih antičkih gradova u Turskoj, smešten na malom poluostrvu u Sredozemnom moru, na oko ...</div>
+			</div>
+		</div>
+		
+		
+		<div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/JHE7FzG.jpeg">
+				<div class="imeAD">Nei Pori</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija13.html">Pogledajte vise informacija</a></div>
+				<div >Nei Pori se zajedno sa svima poznatom Leptokarijom nalazi u grčkoj oblasti Pieria u Olimpskoj regiji. Smešten je na obali... </div>
+			</div>
+		</div>
+		<div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/8eealIc.jpeg">
+				<div class="imeAD"> Leptokaria</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija14.html">Pogledajte vise informacija</a></div>
+				<div >Leptokarija se nalazi u podnožju svima dobro poznate planine Olimp, na obali toplog Egejskog mora. Smeštena je u ...</div>
+			</div>
+		</div>
+		<div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/NXNEpZB.jpeg">
+				<div class="imeAD"> Asprovalta</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija15.html">Pogledajte vise informacija</a></div>
+				<div >Asprovalta pripada opštini Volva i okrugu Solun, a od samog grada Soluna je udaljeno oko 80km. U njegovoj neposrednoj...</div>
+			</div>
+		</div>
+		<div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/HQjJRF5.jpeg">
+				<div class="imeAD"> Stavros</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija16.html">Pogledajte vise informacija</a></div>
+				<div>Stavros je malo mesto sa samo 4000 stanovnika, koje se nalazi u grčkoj oblasti Makedonija, tačnije u njenom središnjem ...</div>
+			</div>
+		</div>
+		
+		<div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/nIhAjPQ.jpeg">
+				<div class="imeAD"> Zanzibar</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija23.html">Pogledajte vise informacija</a></div>
+				<div >Zanzibar u prevodu sa arapskog jezika znači ostrvo crnaca. Ovaj tropski raj je sastavni deo kopnene Tanzanije, smešten na...</div>
+			</div>
+		</div>
+		<div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/NJxBerG.jpeg">
+				<div class="imeAD">Maldivi</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija24.html">Pogledajte vise informacija</a></div>
+				<div> Možda ovo nekima zvuči kao kliše, ali moramo priznati da su Maldivi odavno postali sinonim za luksuz, hedonizam i...</div>
+			</div>
+		</div>
+		
+		
+</div>
+<br>
+<h1> Zimovanje:</h1>
+<br>
+	<div class="kartica">
+		<div class="sadrzajD">
+					<div >
+						<img src="https://i.imgur.com/OrzO5Nd.jpeg">
+						<div class="imeAD">Francuska</div>
+						<div class="podnaslov"><a href="destinacije/turistickaDestinacija19.html">Pogledajte vise informacija</a></div>
+						<div >Francuska skijanje... Uživajte u francuskoj sofisticiransti, poznatoj francuskoj kuhinji i božanstvenoj snežnoj idili. Zimovanje u ... </div>
+					</div>
+				</div>
+		<div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/0pD1inU.jpeg">
+				<div class="imeAD">Austrija</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija20.html">Pogledajte vise informacija</a></div>
+				<div>Austrija Skijanje - Austrija je jedna od alpskih zemalja sa najrazvijenijom infrastrukturom za zimske sportove i zimski turizam. Skijanje... </div>
+			</div>
+		</div>
+		<div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/h2Ult2l.jpeg">
+				<div class="imeAD">Slovenija</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija21.html">Pogledajte vise informacija</a></div>
+				<div >Zimovanje u Sloveniji je popularno jer su cene uvek pristupačne, a skijališta su dobro održavana i uređena. Zimski aranžmani...</div>
+			</div>
+		</div>
+		<div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/hnnhsQM.jpeg">
+				<div class="imeAD">Bosna i Hercegovina</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija22.html">Pogledajte vise informacija</a></div>
+				<div >Bosna je pretežno planinska zemlja. Zauzima površinu od 51.209,2 km². Sastoji se od dve geografske i istorijske celine...</div>
+			</div>
+		</div>
+		<div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/roanJFQ.jpeg">
+				<div class="imeAD">Kopaonik</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija25.html">Pogledajte vise informacija</a></div>
+				<div >Ukoliko je vaš izbor za zimovanje Kopaonik smeštaj koji zadovoljava sve potrebe turista, prirodne lepote koje oduzimaju...</div>
+			</div>
+		</div>
+	</div>
+<br>
+<h1>Gradovi Evrope:</h1>
+<br>
+	<div class="kartica">
+		<div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/mHY2Ayb.jpeg">
+				<div class="imeAD">Rim</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija10.html">Pogledajte vise informacija</a></div>
+				<div >RIM je glavni i najveći grad Italije. Smešten je u centralnoj Italiji, u regionu Lacio, na mestu gde se spajaju...</div>
+			</div>
+		</div>
+		<div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/Fia7una.jpeg">
+				<div class="imeAD">Milano</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija11.html">Pogledajte vise informacija</a></div>
+				<div>MILANO grad kontrasta, svetske slave, usnulih ambijenata i užurbanih ljudi! Moderan, a u isto vreme i staromodan sa... </div>
+			</div>
+		</div>
+		<div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/qIL83Vn.jpeg">
+				<div class="imeAD">Venecija</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija12.html">Pogledajte vise informacija</a></div>
+				<div>VENECIJA grad u Severnoj Italiji, poznat po kanalima, gondolama i bogatoj istoriji, glavni grad regije Veneto i... </div>
+			</div>
+		</div>
+		<div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/HJ7tFU2.jpeg">
+				<div class="imeAD">Prag</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija17.html">Pogledajte vise informacija</a></div>
+				<div >Glavni grad Republike Češke podignut je na obalama reke Vltave, sa dvorcem na stenovitom uzvišenju. Prag predstavlja ...</div>
+			</div>
+		</div>
+		<div class="sadrzajD">
+			<div >
+				<img src="https://i.imgur.com/pSQfbd3.jpeg">
+				<div class="imeAD">Toskana</div>
+				<div class="podnaslov"><a href="destinacije/turistickaDestinacija18.html">Pogledajte vise informacija</a></div>
+				<div>TOSKANA je jedna od najromantičnijih regija Italije. Idealna je turistička destinacija za ljubitelje umetnosti koji ... </div>
+			</div>
+		</div>
+	</div>
+ 
+	<div class="praznina"></div>    
+	<div style="background-color:rgba(132, 198, 255, 0.804) ; background-size: cover; text-align: center;">
+	  <img style="width:20%;height:20%" src="images\travel.png" alt="">
+	  <p class="sredina">Andjela Ristic<br>Email: andjelaristic371@gmail.com<br>Broj telefona: 0123456789 <br> FAKULTET TEHNICKIH NAUKA <br> Softversko inzenjerstvo i informatika <br> </p>
+		<br><button style="background-color: inherit;border:none;color:inherit;" ><a style="text-decoration: none;color:inherit" href=""> izmneni neku destinaicju</a></button><br>
+		<br><button style="background-color: inherit;border:none;color:inherit;" ><a style="text-decoration: none;color:inherit" href=""> obrisi neku destinaciju</a></button> 
+		  
+	</div>
+</body>
+</html>

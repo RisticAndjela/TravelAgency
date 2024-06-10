@@ -1,0 +1,4 @@
+Stranici svi korisnici moze da se pristupi iz footer-a iz Home page. 
+Stranice Sve agencije i Sve destinacije imaju u footer-u dodatak izmene ili brisanja neke destinacije ili agencije, sto jos uvek nema svoju funkcionalnost. 
+Stranice posebnih agencija i destinacija imaju dugmad obrisi i edituj, samo kako bi smanjilo nacin pretrage a ili d.
+Prijava i registracija jos uvek ne rade nista, samo se pojavljuju kao popup  prozori.

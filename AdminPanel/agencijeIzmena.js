@@ -1,5 +1,4 @@
-let firebaseUrl =
-"https://kt1-ar-default-rtdb.firebaseio.com/";
+let firebaseUrl ="https://kt1-ar-default-rtdb.firebaseio.com/";
 
 let IDagencija = getParamValue("id");
 let agencija = {};

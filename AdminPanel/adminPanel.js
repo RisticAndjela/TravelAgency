@@ -4,9 +4,9 @@ let firebaseUrl ='https://kt1-ar-default-rtdb.firebaseio.com/'
 //-------------------KORISNICI--------------------------
 
 let korisnici = {}; 
-getSviKorisnici();
+getSviKorisnicii();
 
-function getSviKorisnici() {
+function getSviKorisnicii() {
   let request = new XMLHttpRequest();
 
   request.onreadystatechange = function () {
@@ -42,8 +42,7 @@ function showEditPageKorisnici() {
 }
 
 
-function deleteKorisnik() {
-  let clickedBtn = this;
+function deleteKorisnik(clickedBtn) {
   let korisnikId = clickedBtn.getAttribute("data-id");
 
   let request = new XMLHttpRequest();
@@ -66,6 +65,7 @@ function deleteKorisnik() {
 
 function appendKorisnikRow(tBody, id, korisnik) {
   let korisnikRow = document.createElement("tr");
+
 
   let adresaTabela = document.createElement("td");
   adresaTabela.innerText = korisnik.adresa;
@@ -142,14 +142,14 @@ btnNe.id = "ne";
 btnNe.textContent = "Ne";
 modalContent.appendChild(btnNe);
 
-// Attach event handlers
-deleteBtn.onclick = function () {
+ // Attach event handlers
+ deleteBtn.onclick = function () {
   modal.style.display = "block";
 };
 
 btnDa.onclick = function () {
   modal.style.display = "none";
-  deleteKorisnik;
+  deleteKorisnik(deleteBtn);
   console.log("obrisali smo ...");
 };
 
@@ -162,12 +162,12 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+deleteTd.appendChild(modal);
 korisnikRow.appendChild(deleteTd);
 
 document.getElementById(tBody).appendChild(korisnikRow);
-
 }
-
 
 
 
